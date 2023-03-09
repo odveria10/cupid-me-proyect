@@ -3,22 +3,39 @@ import React from 'react'
 
 const Inicio = () => {
   return (
-    <div className='inicio bg-info'>
-    <div class="card" className='w 25'>
-            <img class="card-img-top" src="./lebron.jpg " className='w 25' alt="" />
-            <div class="card-body">
-                <h5 class="card-title">Lebron</h5>
-                <p class="card-text">Jugador profecional de la NBA  </p>
-                <input class="btn btn-primary" type="button" value="perfil"/>
-                <input class="btn btn-primary" type="button" value="like"/>
-
-<input class="btn btn-primary" type="button" value="dislike"/>
-<input class="btn btn-primary" type="submit" value="report"/>
-<input class="btn btn-primary" type="reset" value="message"></input>
-            </div>
-        </div>
+    <div className='welcome align-items-center'>
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">CUPID ME</h1>
+          <p class="lead">WELCOME</p>
+          <hr class="my-2"/>
         
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">CREA TU CUENTA</a>
+          </p>
+        </div>
+      </div>
+      <div className='border text-center '>
+      <form method="post" action="" name="signup-form">
+    <div class="form-element">
+        <label>Username</label>
+        <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
     </div>
+    <div class="form-element ">
+        <label>Email</label>
+        <input type="email" name="email" required />
+    </div>
+    <div class="form-element">
+        <label>Password</label>
+        <input type="password" name="password" required />
+    </div>
+    <button type="submit" name="register" value="register">Register</button>
+</form>
+</div>
+
+      
+    </div>
+    
   )
 }
 

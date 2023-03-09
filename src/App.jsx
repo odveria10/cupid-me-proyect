@@ -7,18 +7,23 @@ import Footer from './Components/Footer/Footer';
 
 
 
+
 const App = () => {
   return (
     <div className="App bg-info">
+
+
       <BrowserRouter>
       <Navbar/>
         <Routes>
         
-      <Route path='/' element={<Inicio/>}/>
-        <Route path='/Mensajes' element={<Mensajes/>}/>
-        <Route path='/Perfil'element={<Perfil/>}/>
+      <Route path='inicio.jsx' element={<Inicio/>}/>
+        <Route path='/Mensajes.jsx' element={<Mensajes/>}/>
+        <Route path='/Perfil.jsx'element={<Perfil/>}/>
       </Routes>
       </BrowserRouter>
+
+      
       
 <Footer/>
     </div>
