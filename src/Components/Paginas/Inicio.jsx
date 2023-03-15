@@ -15,11 +15,11 @@ const Inicio = () => {
           </p>
         </div>
       </div>
-      <div className='border text-center '>
+      <div className='text-center  '>
       <form method="post" action="" name="signup-form">
     <div class="form-element">
         <label>Username</label>
-        <input type="text" name="username" pattern="[a-zA-Z0-9]+" required />
+        <input type="text" name="username" pattern="" required />
     </div>
     <div class="form-element ">
         <label>Email</label>
